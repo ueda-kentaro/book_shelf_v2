@@ -1,6 +1,7 @@
 <h2>書籍一覧</h2>
 <% @books.each do |book| %>
-<li><%= book.name %></li>
+<li><%= book.name %>
+<%=link_to '詳細', book_path(book) %></li>
 
 <% end %>
 
