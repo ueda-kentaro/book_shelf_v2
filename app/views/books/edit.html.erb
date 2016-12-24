@@ -1,8 +1,8 @@
-<h2>新規書籍登録</h2>
+<h2>書籍編集</h2>
 <%=form_for @book do |f|  %>
     書籍名:<%= f.text_field :name %><br>
     価格:<%= f.number_field :price %><br>
     出版社:<%= f.text_field :publish %><br>
     刊行日:<%= f.date_field :publish_date %><br>
-    <%= f.submit '追加'%>
+    <%= f.submit '更新'%>
 <% end %>
